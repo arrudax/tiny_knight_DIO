@@ -1,0 +1,81 @@
+[gd_scene load_steps=4 format=3 uid="uid://drewwr05eobe"]
+
+[ext_resource type="Texture2D" uid="uid://dttbmqo518fni" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Purple/Warrior_Purple.png" id="1_arxd0"]
+[ext_resource type="PackedScene" uid="uid://b0r63a8hxg5h2" path="res://player/player.tscn" id="2_rxwf8"]
+[ext_resource type="PackedScene" uid="uid://dygn2i7up18xm" path="res://enemies/pawn.tscn" id="3_h64ji"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="WarriorPurple" type="Sprite2D" parent="."]
+position = Vector2(1903, 765)
+texture = ExtResource("1_arxd0")
+
+[node name="Label" type="Label" parent="WarriorPurple"]
+offset_left = 701.0
+offset_top = -682.0
+offset_right = 741.0
+offset_bottom = -659.0
+scale = Vector2(1.23014, 1.21674)
+text = "Idle"
+
+[node name="Label2" type="Label" parent="WarriorPurple"]
+offset_left = 705.0
+offset_top = -474.0
+offset_right = 745.0
+offset_bottom = -451.0
+scale = Vector2(1.23014, 1.21674)
+text = "Run"
+
+[node name="Label3" type="Label" parent="WarriorPurple"]
+offset_left = 673.0
+offset_top = -287.0
+offset_right = 800.0
+offset_bottom = -264.0
+scale = Vector2(1.23014, 1.21674)
+text = "Attack stander 1"
+
+[node name="Label4" type="Label" parent="WarriorPurple"]
+offset_left = 657.0
+offset_top = -79.0
+offset_right = 788.0
+offset_bottom = -56.0
+scale = Vector2(1.23014, 1.21674)
+text = "Attack stander  2"
+
+[node name="Label5" type="Label" parent="WarriorPurple"]
+offset_left = 598.0
+offset_top = 98.0
+offset_right = 704.0
+offset_bottom = 121.0
+scale = Vector2(1.23014, 1.21674)
+text = "Attack front 1"
+
+[node name="Label6" type="Label" parent="WarriorPurple"]
+offset_left = 594.0
+offset_top = 283.0
+offset_right = 700.0
+offset_bottom = 306.0
+scale = Vector2(1.23014, 1.21674)
+text = "Attack front 2"
+
+[node name="Label7" type="Label" parent="WarriorPurple"]
+offset_left = 583.0
+offset_top = 472.0
+offset_right = 689.0
+offset_bottom = 495.0
+scale = Vector2(1.23014, 1.21674)
+text = "Attack back 1"
+
+[node name="Label8" type="Label" parent="WarriorPurple"]
+offset_left = 594.0
+offset_top = 676.0
+offset_right = 700.0
+offset_bottom = 699.0
+scale = Vector2(1.23014, 1.21674)
+text = "Attack back 2"
+
+[node name="Player" parent="." instance=ExtResource("2_rxwf8")]
+position = Vector2(315, 340)
+
+[node name="Pawn" parent="." instance=ExtResource("3_h64ji")]
+position = Vector2(638, 329)

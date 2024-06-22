@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bf7p45v3f4aup"]
+
+[ext_resource type="PackedScene" uid="uid://cg47c56q0mr6t" path="res://misc/skull.tscn" id="1_48u5j"]
+
+[node name="Skull" instance=ExtResource("1_48u5j")]
+frame = 6
